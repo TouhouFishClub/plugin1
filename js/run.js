@@ -1,5 +1,9 @@
 function simpleInnerHtml(id){
-  document.getElementById(id).contentWindow.document.body.innerHTML=document.getElementById(id).contentWindow.document.getElementsByClassName('player-section p-relative border-box none-select z-player-section')[0].innerHTML
+  setTimeout(function(){
+    document.getElementById(id).contentWindow.document.querySelector('.bilibili-live-player-video-controller-web-fullscreen-btn > button').click()
+    document.getElementById(id).contentWindow.document.querySelector('aside-area-toggle-btn').click()
+  },5000)
+
 }
 
 const showBiliRomes = (...args) => {
@@ -11,7 +15,7 @@ const showBiliRomes = (...args) => {
   document.body.innerHTML = blHtml
 }
 
-showBiliRomes(39277, 39277, 39277, 39277, 39277, 39277, 39277)
+showBiliRomes(245, 245)
 
 Array.prototype.forEach.call(document.querySelectorAll('iframe'), ele => {
   ele.onload = function(){
