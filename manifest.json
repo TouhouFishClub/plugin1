@@ -42,7 +42,7 @@
 		{
 			//"matches": ["http://*/*", "https://*/*"],
 			// "<all_urls>" 表示匹配所有地址
-			"matches": ["http://live.bilibili.com/*", "https://live.bilibili.com/*"],
+			"matches": ["http://live.bilibili.com/xxx*", "https://live.bilibili.com/xxx*"],
 			// 多个JS按顺序注入
 			"js": ["js/run.js"],
 			// JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式
